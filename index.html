@@ -1,0 +1,34 @@
+#!/bin/bash
+
+#Description: a script for inventory
+#Author: Guez DABRE
+
+echo " we are about to start the full inventory of the system please be patient..."
+echo
+sleep 1
+lsblk
+echo
+sleep 1
+echo " your os version is : "
+echo
+sleep 1
+cat /etc/os-release
+echo
+sleep 1
+echo " checking your system bits... "
+echo
+sleep 1
+getconf LONG_BIT
+echo
+sleep 1
+echo " you cpu(s) info below : "
+echo
+sleep 1
+lscpu
+echo
+sleep 1
+echo " more info about your system : "
+echo
+uptime
+echo 
+echo " It's all done thank you for your patience"
